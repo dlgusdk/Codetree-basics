@@ -1,18 +1,16 @@
-/*Á¤¼ö a°¡ 3ÀÇ ¹è¼ö¶ó¸é YES¸¦, ¾Æ´Ï¶ó¸é NO¸¦ Ãâ·ÂÇÏ°í, ¶Ç 5ÀÇ ¹è¼ö¶ó¸é YES¸¦, ¾Æ´Ï¶ó¸é NO Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØº¸¼¼¿ä.
-Ã¹ ¹øÂ° ÁÙ¿¡ Á¤¼ö a°¡ ÁÖ¾îÁı´Ï´Ù.
-1 ¡Â a ¡Â 100
-Ã¹ ¹øÂ° ÁÙ¿¡ Á¤¼ö a°¡ 3ÀÇ ¹è¼ö¶ó¸é YES¸¦, ¾Æ´Ï¶ó¸é NO¸¦ Ãâ·ÂÇÕ´Ï´Ù.
-µÎ ¹øÂ° ÁÙ¿¡ Á¤¼ö a°¡ 5ÀÇ ¹è¼ö¶ó¸é YES¸¦, ¾Æ´Ï¶ó¸é NO Ãâ·ÂÇÕ´Ï´Ù.*/
+/*ì •ìˆ˜ aê°€ 3ì˜ ë°°ìˆ˜ë¼ë©´ YESë¥¼, ì•„ë‹ˆë¼ë©´ NOë¥¼ ì¶œë ¥í•˜ê³ , ë˜ 5ì˜ ë°°ìˆ˜ë¼ë©´ YESë¥¼, ì•„ë‹ˆë¼ë©´ NO ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ë³´ì„¸ìš”.
+ì²« ë²ˆì§¸ ì¤„ì— ì •ìˆ˜ aê°€ ì£¼ì–´ì§‘ë‹ˆë‹¤.
+1 â‰¤ a â‰¤ 100
+ì²« ë²ˆì§¸ ì¤„ì— ì •ìˆ˜ aê°€ 3ì˜ ë°°ìˆ˜ë¼ë©´ YESë¥¼, ì•„ë‹ˆë¼ë©´ NOë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤.
+ë‘ ë²ˆì§¸ ì¤„ì— ì •ìˆ˜ aê°€ 5ì˜ ë°°ìˆ˜ë¼ë©´ YESë¥¼, ì•„ë‹ˆë¼ë©´ NO ì¶œë ¥í•©ë‹ˆë‹¤.*/
 
 import java.util.Scanner;
 
 public class Ex_91 {
 	public static void main(String[] args) {
-		System.out.println("Á¤¼ö a, b¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ a, bë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		Scanner scanner = new Scanner(System.in);
-		int a, b;
-		a = scanner.nextInt();	
-		b = scanner.nextInt();	
+		int a = scanner.nextInt();	
 		
 		if(a % 3 == 0) {
 			System.out.println("YES");
@@ -20,7 +18,7 @@ public class Ex_91 {
 			System.out.println("NO");
 		}
 		
-		if(b % 5 == 0) {
+		if(a % 5 == 0) {
 			System.out.println("YES");
 		} else {
 			System.out.println("NO");
